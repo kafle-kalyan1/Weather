@@ -9,8 +9,9 @@ const FetchWeather = () => {
    
    const axiosData = () => {
       console.log("okkk")
-      // axios.get("api.openweathermap.org/data/2.5/forecast?q=Dharan&appid=afcde0ca355ba4fe4fc0947b41892bf0")
-      axios.get("api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid=afcde0ca355ba4fe4fc0947b41892bf0")
+      //Provide your API key 
+      let api = "APIIIIII"
+      axios.get("api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid="+api)
         .then(response => {
          //  setWeather(response.data)
           setLoading(false)
